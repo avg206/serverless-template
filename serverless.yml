@@ -1,0 +1,15 @@
+service: serverless-template
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-east-1
+
+
+functions:
+  init:
+    handler: src/functions/init/index.default
+    events:
+      - http:
+          path: init
+          method: get
