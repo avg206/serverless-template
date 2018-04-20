@@ -1,15 +1,13 @@
 {
-  "name": "js-project-template",
-  "version": "0.1.0",
-  "description": "Basic JS template",
+  "name": "serverless-template",
+  "version": "1.0.0",
+  "description": "Basic Serverless Setup",
   "main": "src/index.js",
   "author": "Anatoli Huseu (avg.tolik@gmail.com)",
   "license": "MIT",
   "scripts": {
     "start": "node ./src/index.js",
-    "lint": "npm run lint:styles && npm run lint:js",
-    "lint:js": "eslint ./src",
-    "lint:styles": "stylelint 'src/**/*.css'",
+    "lint": "eslint ./src",
     "test": "jest"
   },
   "devDependencies": {
@@ -20,8 +18,9 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "jest": "^22.4.2",
-    "stylelint": "^9.1.1",
-    "stylelint-config-standard": "^18.2.0"
+    "jest": "^22.4.2"
+  },
+  "dependencies": {
+    "serverless": "^1.26.1"
   }
 }
